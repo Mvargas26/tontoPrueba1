@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class frmPantallaJuego
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.pic1 = New System.Windows.Forms.PictureBox()
         Me.pic4 = New System.Windows.Forms.PictureBox()
@@ -152,7 +152,7 @@ Partial Class Form1
         Me.btnParejas.Text = "Parejas"
         Me.btnParejas.UseVisualStyleBackColor = True
         '
-        'Form1
+        'frmPantallaJuego
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -169,8 +169,8 @@ Partial Class Form1
         Me.Controls.Add(Me.pic3)
         Me.Controls.Add(Me.pic4)
         Me.Controls.Add(Me.pic1)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "frmPantallaJuego"
+        Me.Text = "Pantalla Juego"
         CType(Me.pic1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pic4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pic3, System.ComponentModel.ISupportInitialize).EndInit()

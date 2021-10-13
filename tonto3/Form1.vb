@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class frmPantallaJuego
 
 #Region "Variables"
     Dim vec1() As Integer
@@ -68,6 +68,10 @@
     End Sub
 
     Private Sub btnParejas_Click(sender As Object, e As EventArgs) Handles btnParejas.Click
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
