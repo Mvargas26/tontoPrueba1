@@ -2,7 +2,7 @@
 
 #Region "Variables"
     Dim vec1() As Integer
-    Dim vect2() As Integer
+    Dim vec2() As Integer
 
 #End Region
 
@@ -38,7 +38,7 @@
                 For j = 0 To 3 Step 1
                     If vector1(j) = 0 Then
                         vector1(j) = numeroAleatorio
-                        contadorNumerosAleatorios = contadorNumerosAleatorios + 1
+                        contadorNumerosAleatorios += 1
                         Exit For
                     End If
                 Next
@@ -47,7 +47,7 @@
         Loop
 
         For k = 0 To 3 Step 1
-            lblInfoNumeros.Text = lblInfoNumeros.Text + Str(vector1(k))
+            lblInfoNumeros.Text += Str(vector1(k))
             Select Case k
                 Case 0
 
@@ -60,20 +60,33 @@
                     pic3.ImageLocation = "C:\Users\micha\source\repos\tonto3\tonto3\Imagenes\a" + Str(vector1(k)) + ".jpg"
             End Select
         Next
+        txtInfo.ResetText()
     End Sub '// Fin metodo NumerosAleatorios
+
+    Public Sub Parejas(iVector() As Integer, iVector2() As Integer)
+
+
+        For i = 0 To iVector.Length - 1 Step 1
+            For j = 0 To iVector2.Length - 1 Step 1
+                txtInfo.Text = "El vector1 vale " + Str(vec1(i)) + " y el vector2 vale  " + Str(vec2(j))
+
+            Next
+        Next
+
+    End Sub
+
+
 
     Private Sub btnRevolver_Click(sender As Object, e As EventArgs) Handles btnRevolver.Click
         NumerosAleatorios(vec1, lbl1, pic1, pic2, pic3, pic4)
-        NumerosAleatorios(vect2, lbl2, pic5, pic6, pic7, pic8)
+        NumerosAleatorios(vec2, lbl2, pic5, pic6, pic7, pic8)
     End Sub
 
     Private Sub btnParejas_Click(sender As Object, e As EventArgs) Handles btnParejas.Click
-
+        Parejas(vec1, vec2)
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
 
 #End Region
 

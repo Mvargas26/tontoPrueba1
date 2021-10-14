@@ -34,6 +34,7 @@ Partial Class frmPantallaJuego
         Me.lbl2 = New System.Windows.Forms.Label()
         Me.btnRevolver = New System.Windows.Forms.Button()
         Me.btnParejas = New System.Windows.Forms.Button()
+        Me.txtInfo = New System.Windows.Forms.TextBox()
         CType(Me.pic1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -152,11 +153,19 @@ Partial Class frmPantallaJuego
         Me.btnParejas.Text = "Parejas"
         Me.btnParejas.UseVisualStyleBackColor = True
         '
+        'txtInfo
+        '
+        Me.txtInfo.Location = New System.Drawing.Point(80, 642)
+        Me.txtInfo.Name = "txtInfo"
+        Me.txtInfo.Size = New System.Drawing.Size(890, 22)
+        Me.txtInfo.TabIndex = 12
+        '
         'frmPantallaJuego
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1072, 676)
+        Me.Controls.Add(Me.txtInfo)
         Me.Controls.Add(Me.btnParejas)
         Me.Controls.Add(Me.btnRevolver)
         Me.Controls.Add(Me.lbl2)
@@ -196,4 +205,5 @@ Partial Class frmPantallaJuego
     Friend WithEvents lbl2 As Label
     Friend WithEvents btnRevolver As Button
     Friend WithEvents btnParejas As Button
+    Friend WithEvents txtInfo As TextBox
 End Class
